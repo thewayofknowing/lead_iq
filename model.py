@@ -51,7 +51,7 @@ model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accur
 print "Model Compiled"
 
 # Model Training
-model.fit(X_train, y_train, epochs=10, verbose=1)
+model.fit(X_train, y_train, epochs=20, verbose=1)
 print "Model trained"
 
 # SAVE MODEL
