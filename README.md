@@ -3,9 +3,9 @@
 ## Task : Given the heading and description of a news item, predict the news category
 
 ## Example :
-	* Heading: What To Watch On Hulu That’s New This Week
-	* Description: You're getting a recent Academy Award-winning movie
-	* Category : ENTERTAINMENT
+	Heading: What To Watch On Hulu That’s New This Week
+	Description: You're getting a recent Academy Award-winning movie
+	Category : ENTERTAINMENT
 
 ## Steps to use API :
 1.	In the root folder, run the following commands to setup environment:
