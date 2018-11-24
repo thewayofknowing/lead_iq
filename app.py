@@ -40,7 +40,8 @@ def run_model():
 	headline = word_tokenize(headline)
 	vocab = build_vocab()
 	n_words = len(vocab)
-	label_encoder = pkl.load(open('data/label_encoder.pkl'))
+	with open('data/label_encoder.pkl','rb') as file:
+		label_encoder = pkl.load(file)
 	featurizer = Featurizer(vocab)
 	X = featurizer.featurize([headline+desc])
 	with graph.as_default():	

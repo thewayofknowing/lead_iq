@@ -30,8 +30,8 @@
 
 ## Model Info
 ### Dataset :
-	* Total of ~125k datapoints
-	* 80/20 Train-Test split
+*	Total of ~125k datapoints
+*	80/20 Train-Test split
 
 ### Model : 
 Deep Learning model using Bag-Of-Words scheme, having the following layers:
@@ -40,6 +40,6 @@ Deep Learning model using Bag-Of-Words scheme, having the following layers:
 *	Output Layer – Having 31 neurons, one for each class, using Softmax activation function
 
 ### Metrics:
-	Number of Epochs in Training : 20
-	Train Accuracy : 75.6%
-	Test Accuracy : 58.9%
+Number of Epochs in Training : 20
+Train Accuracy : 75.6%
+Test Accuracy : 58.9%
