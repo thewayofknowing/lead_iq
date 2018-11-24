@@ -33,7 +33,7 @@ def load_model(model_name='models/model_0.json'):
 @app.route('/todo/model/', methods=['POST'])
 def run_model():
 	if 'headline' not in request.json or 'desc' not in request.json:
-		abort(400)
+		return jsonify({'Error': 'POST Parameter missing headline/desc'})
 	desc = request.json['desc']
 	desc = word_tokenize(desc)
 	headline = request.json['headline']
