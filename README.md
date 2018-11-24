@@ -9,21 +9,21 @@ Example :
 
 Steps to use API :
 1)	In the root folder, run the following commands to setup environment:
-a.	conda create -n leadiq_ml
-b.	conda activate leadiq_ml
-c.	pip install -r requirements.txt
+	a.	conda create -n leadiq_ml
+	b.	conda activate leadiq_ml
+	c.	pip install -r requirements.txt
 2)	In the root folder, run the following commands to start the flask server:
-a.	python app.py
+	a.	python app.py
 3)	With the server running, you can use the following command to predict category:
-a.	curl -d ‘{“headline”:<headline>,”desc”:<desc>” -H “Content-Type:application/json” -X POST http://127.0.0.1:5000/todo/model/
+	a.	curl -d ‘{“headline”:<headline>,”desc”:<desc>” -H “Content-Type:application/json” -X POST http://127.0.0.1:5000/todo/model/
 b.	Input : A json having the following fields:
-i.	short_description : string
-ii.	heading : string
+	i.	short_description : string
+	ii.	heading : string
 c.	Output : A JSON having the following fields:
-i.	Category : string
+	i.	Category : string
 d.	Example:
-i.	curl -d '{"headline":"LOOK: Pope John XXIII Through The Years","desc":""}' -H "Content-Type: application/json"  -X POST http://127.0.0.1:5000/todo/model/
-ii.	Output : { "Category": "RELIGION” }
+	i.	curl -d '{"headline":"LOOK: Pope John XXIII Through The Years","desc":""}' -H "Content-Type: application/json"  -X POST http://127.0.0.1:5000/todo/model/
+	ii.	Output : { "Category": "RELIGION” }
 
 
 
