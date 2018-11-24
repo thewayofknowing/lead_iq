@@ -33,8 +33,8 @@ curl -d ‘{“headline”:<headline>,”desc”:<desc>” -H “Content-Type:ap
 ```
 curl -d '{"headline":"LOOK: Pope John XXIII Through The Years","desc":""}' -H "Content-Type: application/json"  -X POST http://127.0.0.1:5000/todo/model/
 ```
-```json
 Output : 
+```json
 	{ 
 		"Category": "RELIGION” 
 	}
